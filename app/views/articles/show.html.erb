@@ -8,4 +8,6 @@
   Created: <%= @article.created_at %>
 </p>
 
+<%= link_to "Delete", @article, data: { turbo_method: :delete } %>
+
 <a href="/articles">Back to Articles</a>
