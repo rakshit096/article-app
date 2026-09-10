@@ -1,0 +1,19 @@
+<h1>Edit Article</h1>
+
+<%= form_with model: @article, authenticity_token: false do |form| %>
+
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.submit "Update Article" %>
+  </div>
+
+<% end %>
